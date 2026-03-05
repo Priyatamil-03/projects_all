@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let str1="rajan,kmar,raj ,senthil , ravi ";
+        console.log(str1)
+        console.log(str1.length)
+
+        let str2=str1.substring(4,6);
+        console.log(str2);
+        let str3=str1.slice(4,7);
+        console.log(str3);
+
+        let str4=str1.substr(4,7);
+        console.log(str4); 
+
+        let str5="    java   script  ";
+        console.log(str5.length);
+
+        let str6=str5.trim();
+        console.log(str6);
+        let str7=str5.trimStart();
+        console.log(str7);
+        let str8=str5.trimEnd();
+        console.log(str8);
+
+        let str12="raj,kumar,raj ,senthil ,raviraj ,RAJ";
+        let str13=str12.replace("raj","madhan")
+        console.log(str14);
+
+        /*let str12="raj,kumar,raj ,senthil ,raviraj ,RAJ";
+        */let str15=str12.charAt("8")
+        console.log(str15);
+        let str16=str12.charCodeAt("8")
+        console.log(str16);
+
+        str17="java Script";
+        console.log(str17.toUpperCase());
+        console.log(str17.toLowerCase());
+
+        let str18=str17.concat(str15,str16)
+        console.log(str18)
+        console.log(str18.length)
+
+        let array1=str12.split("r");
+        console.log(array1);
+        /*
+        let str18=array1.reverse();
+        console.log(str18)*/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <form  id="form_val">
+            <div>
+                <label>First Name</label>
+                <input type="text" name="first_name" required/>
+            </div>
+
+             <div>
+                <label>Second Name</label>
+                <input type="text" name="Second_name" required/>
+            </div>
+
+             <div>
+                <label>Mobile Number</label>
+                <input type="number" name="mobile_number" required/>
+            </div>
+             <div>
+                <label>email</label>
+                <input type="email" name="email" required/>
+            </div>
+            <div>
+                <label>password</label>
+                <input type="password" name="password" required/>
+            </div>
+             <div>
+        
+                <input type="submit" name="submit"/>
+            </div>
+
+        </form>
+    </section>
+    
+<script>     
+               /*
+               document.getElementById("form_val").addEventListener("submit",function (e){
+               e.preventDefault();*/
+               //first name
+               document.getElementById("first_name").addEventListener("focus",()=>{
+
+               })
+                var f_name=document.getElementById("first_name");
+                f_name.addEventListener("blur",function(e){
+                    let fname=f_name.value.trim();
+                    const namePattern=/^[a-zA-Z\xC0-\uFFFF\s.'-]+$/u;
+                    
+                })
+               document.getElementById("first_name").addEventListener("blur",function (e){
+                
+                let fname=document.getElementById("first_name").value.trim();
+                const namePattern=/^[a-zA-Z\xC0-\uFFFF\s.'-']+$/u;
+                if(fname==""){
+                    alert("enter the name properly")
+                }
+                else if((fname.length<3)|| (fname.length>20)){
+                    alert("Name length between 3 to 20")
+                }
+                else if(!(namePattern.test(fname))){
+                    alert("enter alphapet value only")
+                }
+                else{
+                    alert("successfully")
+                }
+            });
+            /*email validation*/
+            document.getElementByid("email").addEventListener("blur",function(e){
+            let error_mess="";
+            let email=document.getElementByid("email").value.trim();
+            let email_pat=/^[a-zA-ZO-9._%+-]+@[a-zA-ZO-9.-]+\.[a-zA-Z]{2,}$/;
+            if(email==""){
+            error_mess="enter the correct email"}
+            else if(!(email_pat.test(email))){
+            error_mess="enter the correct email"}
+            if(error_mess!=""){
+            let label=document.createElement("label");
+            label.setAttribute("id","error_label");
+            label.style.color="red";
+
+            label.innerText=error_mess;
+            document.getElementByid("email").insertAdjacentElement("afterend",label);
+            
+            }
+            else{
+            let error_label=document.getElementByid("error_label");
+        if(error_label){
+            error_label.remove();
+        }
+        }
+
+});
+/*mobile number validation*/
+ document.getElementByid("mobile_number").addEventListener("blur",function(e){
+    let mnumber=document.getElementById("mobile_number").value.trim();
+    if(mnumber==""){
+        alert("enter the name")
+    }
+    else if(!(mnumber.length==10)){
+        alert("Enter 10 digit mobile number")
+    }
+    else{
+        alert("successfully")
+    }
+ });
+ 
+            </script>
+
+</body>
+</html> 

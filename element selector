@@ -1,0 +1,4 @@
+<link rel="Stylesheet" href="Style.css">
+<h1>element selector</h1>
+<h1>how are you</h1>
+<p>h1,p are the elements we can can change color by adding code in css</p>

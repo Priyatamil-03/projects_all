@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+          let obj1={name:"jb",roll:40}
+          let var1=obj1.f_name;
+          let var2=obj1["roll"];
+          let {f_name,roll}=obj1;
+          console.log(f_name)
+  
+
+
+        var marks={x:21,y:-34,z:47};
+        var xrdfsgf=marks.x//x=21
+        var yr=marks.y
+        var zr=marks.z
+         console.log(xrdfsgf);
+        console.log(yr);
+        console.log(zr);
+
+        var names=["alpha","beta","gamma","delta"]//array destructing
+        var[,second]=names;
+        var sNames=names;
+        console.log(second);
+        console.log(sName);
+        var marks={x:21,ac:89,y:-34,z:47,aa:56,yx:34};//object destructing
+        //console.log(marks);
+        const{x,yx,y,aa}=marks;//x=21,y=-34,z=47
+        const{a,b,c}=marks;
+        console.log(x);
+        console.log(yx);
+        console.log(y);
+        console.log(aaa);
+        console.log(aa);
+        console.log(ac);
+        document.getElementById("demo3").innerHTML=x;
+         document.getElementById("demo1").innerHTML=yx;
+          document.getElementById("demo2").innerHTML=y;
+           document.getElementById("demo4").innerHTML=aa;
+
+
+           let obj={
+            age:45,
+            roll_no:34,
+            name:priya,
+            add:{
+                country:"india",
+                state:"tn",
+                details:{
+                    code:630212,
+                }
+            }
+           }
+           let{s_name,age,add:{details:{code=value},state,country}}=obj;
+           console.log()
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(a,b){
+            return console.log(a+b);
+        }
+    add(4,5);
+
+     let add1=()=>4+5;
+        
+    let array1=[45,67,78]
+    let tot=0;
+    array1.forEach(function sum(v){
+        tot+=v;
+
+    })
+   console.log(tot);//190
+
+    let array_2=[45,67,78]//arrow function with array
+     let tot1=0;
+
+    array1.forEach((v)=>{
+        tot+=v;
+    }
+)
+    console.log(tot);
+
+    let array2=array1.map(function(v){   //map function
+        return v*10;
+    })
+
+    let array3=array1.map((v)=>{         //arrow function in map
+     return v*10;
+    })
+    console.log(array2);
+    console.log(array3);
+
+    let obj=[
+        {name:"raj",roll:45},
+        {name:"kumar",roll:45},
+    ]
+    let obj_names=obj.map((v)=>v.name)   //arrow function in object using map
+    console.log(obj_names)
+
+    obj.forEach (v=> console.log(v.name+""+v.roll))   //arrow function in object using forEach
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

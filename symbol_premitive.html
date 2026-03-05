@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*let a=Symbol("a");//symbol datatype
+        console.log(a)
+        console.log(typeof(a))
+        let b=Symbol("a")
+        console.log(b)
+        if(a==b){
+            console.log("true")
+        }
+        else{
+            console.log("false")
+        }*/
+        /*
+        let roll_no =Symbol("roll_no");
+        let personal_obj={
+           [ roll_no]:70,
+            age:25,
+            gender:"female"
+        }
+        console.log(personal_obj);
+        console.log(personal_obj.age,personal_obj["gender"],personal_obj.roll_no)//.roll_no o/p undefined
+        console.log(personal_obj.age,personal_obj["gender"],personal_obj[roll_no])//[] o/p show*/
+          
+        for(let i in personal_obj){
+            console.log(personal_obj[i])
+        }
+        let personal_obj2={
+           [roll_no]:70,
+            age:25,
+            gender:"female"
+        }
+        
+        let library_obj={
+            roll_no:"2026-70",
+            book_taken:4
+            
+        }
+        let merge_obj={...personal_obj2,...library_obj}
+        console.log(merge_obj);
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      /*  function add(a,b){ //2 come
+            return (a+b)
+        }
+        let var1=add(56,78);//1 come
+        console.log(var1)//result*/
+    
+    /* async function add(a,b){ 
+        return new Promise((resolve)=>{
+           setTimeout(()=>{
+            resolve(a+b)
+           })
+
+        })
+    }
+          async function get(){
+            var a=56;
+            var b=45;
+            a=+b;
+            b*=a;
+            let var1=await add(a,b);
+               console.log(var1)
+               //var1.then(e)=>console.log(e))
+               console.log("hello");
+    
+          }
+          get();*/
+          function authen(a,b) {
+            uname=a;
+            pwd=b;
+            d_user="priya"
+            d_pass="pass"
+            if((a==d_user)&&(b==d_pass)){
+                return 1;
+            }
+            else{
+                return 0;
+            }
+          }
+          async function login(){
+          user_name="priya";
+          user_pass="pass";
+          let com_pwd=await authen(user_name,user_pass)
+          if(com_pwd){
+            console.log("home")
+          }
+          else{
+            console.log("login")
+          }
+          }
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

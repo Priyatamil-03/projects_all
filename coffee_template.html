@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+        .hero{
+            min-height: 600px;
+            background:url('coffee2.jfif'),transparent;
+            background-position:left;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            padding: 10px 0;
+            margin:auto;
+            border-bottom: 2px double #a6b3a8;
+        }
+
+        .logo{
+            width: 50px;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+        nav ul li{
+            margin: 0 20px;
+        }
+        nav ul li a{
+            font-size: 20px;
+            color:#741010;
+            text-transform: uppercase;
+        }
+        .nav ul li a:hover{
+            color: #ff2058;
+            border-bottom: 2px solid #2041ff;
+        }
+        nav button{
+            padding: 10px 15px;
+            background: #ff7620;
+            border: 2px solid #ff7620;
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            transition: 3s;
+        }
+        .nav button:hover{
+            scale: .8;
+        }
+        .login{
+            background:transparent;
+            border: 2px solid #0b52bd;
+            margin-right: 25px;
+        
+        }
+        .login:hover{
+            background: #20ff8f;
+            color: #787878;
+            border-color: #ff20c7;
+        }
+        .content{
+            position:absolute;
+            top:35%;
+            left: 90px;
+            color: #949ca0;
+        }
+        .h2{
+            font-size: 100px;
+            color: #0b5192;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .p{
+            color: #fff;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+        .content button{
+            background: #c0cc11;
+            border: none;
+            padding: 12px 55px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 100;
+            margin-top: 50px;
+            transition: .3s;
+        }
+        .content button:hover{
+            scale: .2;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="coffee.jfif" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">photo</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <div>
+                <button class="login">login</button>
+                <button>More</button>
+            </div>
+        </nav>
+        <div class="content">
+            <h2>Make your Day<br> with our Coffee.</h2>
+            <p>Coffee is a popular brewed beverage made from roasted and<br> ground seeds (beans) of the Coffea plant, known for its stimulating caffeine <br>and rich flavor, enjoyed globally for centuries as a social drink,<br> a source of antioxidants, and a major commodity, with varieties like<br> Arabica and Robusta offering <br>different tastes and strengths, prepared in numerous ways from espresso to lattes.</p>
+            <button>Know more</button>
+        </div>
+    </div>
+    
+</body>
+</html>

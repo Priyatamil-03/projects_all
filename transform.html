@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .original {
+            width:200px;
+            height:100px;
+            background-color: aqua;
+            transition: width 2s;height:2s,border 3s;
+        }
+        .original:hover{
+            width:300px;
+            background-color: red;
+        }
+        .modified_scale{
+            height: 100px;
+            width: 200px;
+            background-color: rgb(32, 0, 107);
+            position: relative;
+            top: 200px;
+            transform: scale(2,2);
+        }
+        .modified_translate{
+            height: 100px;
+            width: 200px;
+            background-color: rgb(76, 0, 225);
+            position: fixed;
+            top: 0px;
+            transform: translate();
+        }
+        .modified_rotate{
+            height: 100px;
+            width: 200px;
+            background-color: rgb(159 152 176);
+            position: fixed;
+            top: 35px;
+            border-left: 12px solid red;
+            left: 250px;
+            transform: rotate(45deg)/*rotatex(50deg);rotateY(45deg);rotate(45deg);rotate3D(2,1,1,45deg)*/
+        }
+    </style>
+</head>
+<body>
+    <div class="original">
+
+    </div>
+    <div class="modified_scale">
+
+    </div>
+    <div class="modified_translate">
+        </div>
+        <div class="modified_rotate">
+
+        </div>
+    
+</body>
+</html>

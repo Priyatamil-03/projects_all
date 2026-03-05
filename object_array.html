@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>/*
+        const obj={
+            roll:70,
+            student_name:"priya",
+            student_lastname:"dharshini",
+            fullname_function(){
+                return this.student_name+""+this.student_lastname;
+            }
+        }
+        for(let i in obj){
+            console.log(i+""+obj[i]);
+        }
+
+        
+        var1="priya"
+        obj.roll=70;
+        console.log(obj.roll);
+        alert(obj.student_name);
+        document.write(obj.roll);
+        console.log(obj["roll"]);
+        console.log(obj.fullname_function());*/
+
+        let array1=[70,"priya",true,null]
+        for(let i in array1){
+            console.log(i);
+        }
+        let string1="java"
+        for(let i of string1)
+        {
+            console.log(i);
+        }
+
+        console.log(array1["1"])
+        array1["1"]="priya";
+        array1["1"]=70;
+        for(i=0;i<array1.length;i++){
+        console.log(array1[i]);
+        }
+        let array2=new Array("priya",70,true)
+        console.log(array2);
+            </script>
+</head>
+<body>
+    <div id="demo">
+
+    </div>
+    <script>
+        document.getElementById("demo").innerText=array1;
+    </script>
+    
+</body>
+</html>

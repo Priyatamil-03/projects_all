@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>//syngronous
+        //implicit type conversion
+        let a="45"
+        let b=3;
+        console.log(typeof(a));//string
+        b+=a;//345 concat
+        
+        console.log(typeof(b));
+
+        console.log(typeof(a));//number
+        a-=b;
+        console.log(typeof(a));
+        /*manual conversion*/
+
+        /*string conversion*/
+        let var1=45;
+        let bool=true;
+        var var2=String(bool);
+        
+        console.log(typeof(var2));
+ /*number conversion*/
+               
+             var3="45";
+             var4=Number(var3);
+             console.log(typeof(var4));
+              var5="4.8";
+              var6=Number(var5);
+              console.log(typeof(var5));
+              console.log(typeof(var6));
+              console.log(var6)
+             
+             var5="45 8";
+             var6=Number(var5);
+             console.log(typeof(var5));
+             console.log(typeof(var6));
+             console.log(var6)
+                /*boolean*/                       
+             var6=Number(bool)
+             console.log(typeof(bool));
+             console.log(typeof(var6));
+             console.log(var6)
+              
+             var6=1
+             console.log(Boolean(var6));
+             var6=0
+             console.log(Boolean(var6));
+             var6=null
+             console.log(Boolean(var6));
+             var6=NaN
+             console.log(Boolean(var6));
+
+
+             var6=9;
+             var7=var6.toString();
+             console.log(typeof(var7));
+             console.log(Boolean(var7));
+
+             console.log(Math.PI)//math function
+                       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

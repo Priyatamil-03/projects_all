@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+            font-family: sans-serif;
+        }
+        .hero{
+            min-height: 100vh;
+            background: url("C:/Users/Vinoth Valiant/Downloads/college2.jfif");
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            padding: 10px 0;
+            margin:auto;
+            border-bottom: 2px double #170168;
+        }
+
+        .logo{
+            width: 150px;
+        }
+        nav ul{
+            display: flex;
+            align-items: center;
+        }
+        nav ul li{
+            margin: 0 20px;
+        }
+        nav ul li a{
+            font-size: 20px;
+            color:#741010;
+            text-transform: uppercase;
+        }
+        .nav ul li a:hover{
+            color: #ff2058;
+            border-bottom: 2px solid #2041ff;
+        }
+        nav button{
+            padding: 10px 15px;
+            background: #ff7620;
+            border: 2px solid #ff7620;
+            font-size: 15px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            transition: 3s;
+        }
+        .nav button:hover{
+            scale: .8;
+        }
+        .login{
+            background:transparent;
+            border: 2px solid #bd0b0b;
+            margin-right: 25px;
+        }
+        .login:hover{
+            background: #ff7620;
+            color: #787878;
+            border-color: #ff7620;
+        }
+        .content{
+            position:absolute;
+            top:35%;
+            left: 90px;
+        }
+        .h2{
+            font-size: 100px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        .p{
+            color: #fff;
+            font-size: 11px;
+            margin-top: 10px;
+        }
+        .content button{
+            background: #ff7620;
+            border: none;
+            padding: 12px 55px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 100;
+            margin-top: 50px;
+            transition: .3s;
+        }
+        .content button:hover{
+            scale: .2;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="C:/Users/Vinoth Valiant/Downloads/college2.jfif" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">fees</a></li>
+                <li><a href="#">photo</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <div>
+                <button class="login">login</button>
+                <button>More</button>
+            </div>
+        </nav>
+        <div class="content">
+            <h2>unlock your <br>future with us</h2>
+            <p>chart your path to sucess at our college,where knowlede meets opportunity,Innovation thrives,and <br>lifelong connections are forced in every class and corner.</p>
+            <button>Know more</button>
+        </div>
+    </div>
+    
+</body>
+</html>

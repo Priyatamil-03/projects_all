@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<label for="studentSelect">Select Student:</label>
+<select id="studentSelect" onchange="showGrade()">
+  <option value="">-- Choose a student --</option>
+</select>
+
+  <p>Grade: <span id="displayGrade">N/A</span></p>
+ <div id="studentOptions" class="options"></div>
+
+<script>
+  // 1. Array of 30 students
+  const students = [
+    { name: "Alice", grade: "A",profile:"p1.jfif"},
+    { name: "Bob", grade: "B" },
+    { name: "Charlie", grade: "C" },
+    { name: "David", grade: "B" },
+    { name: "Eve", grade: "A" },
+    {name:"riya",grade:"A"},
+    {name:"maya",grade:"B"},
+    {name:"soya",grade:"B+"},
+    {name:"kavya",grade:"A+"},
+    {name:"lara",grade:"A+"},
+    {name:"thara",grade:"A+"},
+    {name:"sura",grade:"A+"},
+    {name:"geetha",grade:"O"},
+    {name:"selci",grade:"A+"},
+    {name:"viji",grade:"A+"},
+    {name:"pichu",grade:"A"},
+     {name:"prema",grade:"A"},
+    {name:"sona",grade:"B"},
+    {name:"rani",grade:"C"},
+    {name:"ramya",grade:"A+"},
+    {name:"thara",grade:"A+"},
+    {name:"paru",grade:"A+"},
+    {name:"pavi",grade:"A+"},
+    {name:"selvi",grade:"A+"},
+  ];
+
+  // 2. Populate the select box on page load
+  const select = document.getElementById('studentSelect');
+  students.forEach((student, index) => {
+    let opt = document.createElement('option');
+    opt.value = index; // Store array index as the value
+    opt.innerHTML = student.name;
+    select.appendChild(opt);
+  });
+
+  // 3 & 4. Function to check and display the grade
+  function showGrade() {
+    const selectedIndex = select.value;
+    const display = document.getElementById('displayGrade');
+    
+    if (selectedIndex !== "") {
+      // Access the array at the chosen index
+      display.innerHTML = students[selectedIndex].grade;
+    } else {
+      display.innerHTML = "N/A";
+    }
+  }
+  students.forEach(student => {
+  const option = document.createElement("div");
+  option.classList.add("option");
+
+  option.innerHTML = `
+    <img src="${student.image}" width="30" style="border-radius:50%">
+    ${student.name}
+  `;
+
+  option.addEventListener("click", () => {
+    selectedStudentDiv.innerHTML = `
+      <img src="${student.image}" width="30" style="border-radius:50%">
+      ${student.name}
+    `;
+    optionsContainer.style.display = "none";
+  });
+
+  optionsContainer.appendChild(option);
+});
+
+selectedStudentDiv.addEventListener("click", () => {
+  optionsContainer.style.display =
+    optionsContainer.style.display === "block" ? "none" : "block";
+});
+
+  
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>

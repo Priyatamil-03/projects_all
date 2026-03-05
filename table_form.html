@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th,td{
+            padding: 10%;
+            width: 350px;
+        }
+        table,tr,td,th{
+            border: 2px double grey;
+        }
+        thead{
+            background-color: rgb(176,175,174);
+            font-family:cambria,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        form{
+            margin: 5%;
+            box-shadow: 0px 0px 1px 2px grey;
+            padding: 5%;
+        }
+        .form-cont{
+            padding: 1%;
+        }
+        .form-cont label{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+        <thead>
+            <th>name</th>
+            <th>age</th>
+            <th>qualification</th>
+        </thead>
+    </table>
+    <tr>
+        <td>rajan</td>
+        <td>24</td>
+        <td>BE</td>
+    </tr>
+    </tbody>
+    </table>
+    <form>
+        <div class="form-cont">
+            <label>first name</label> <input type="text">
+        </div>
+        <div class="form-cont">
+            <label>last name</label> <input type="text">
+        </div>
+        <div class="form-cont">
+            <label>mobile number</label> <input type="text">
+        </div>
+        <div class="form-cont">
+            <label>gender</label>
+            <div class="gen_cont">
+                <label>male</label>
+            </div>
+        <div class="gen_cont">
+            <label>Male</label><input type="radio" name="gender" value="male">
+           <label>female</label><input type="radio" name="gender" value="female">
+           <xlabel>other</label><input type="radio" name="gender" value="other"> 
+        </div>
+        </div>
+    </form>
+</body>
+</html>

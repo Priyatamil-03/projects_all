@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>//asyngronous 
+        /*function a(){
+            function b(){
+                console.log("hai"+d)
+            }
+        }*/
+        /*let prmo=new Promise();*/
+        let p= new Promise((resolve)=>{//fulfil or success,reject,pending(3stages in promises)
+            let a=45;
+            let b="45";
+            if(a==b){
+                resolve("error")
+            }
+        });
+        /*console.log(p);*/
+        function a(){
+        //let prom=new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        console.log("inner set time")//
+        resolve("success");
+        },1000)
+        };
+        //console.log(a());//
+        console.log("hello")
+        function getData(){
+        return new Promise((resolve)=>{
+        setTimeout(()=>{
+        resolve("Data received");
+    },2000);
+    });
+    }
+    getData().then((result)=>
+    console.log(result));
+    console.log("hello")
+    function gettata(cal){
+    return(new Promise((resolve,reject)=>{
+    let a=45;
+    let b="45";
+    if (a==b){
+    resolve("log")
+    }
+    else{
+    reject("error in code")
+}
+    }))
+}
+    gettata().then((result)=>console.log(result)).catch((e)=>{console.log(e)})
+    console.log("hello")
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
